@@ -146,7 +146,7 @@ body {
   font-size: 44px;
   line-height: 1.36;
   color: var(--addres-color);
-  max-width: 696px;
+  width: 696px;
 
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -197,7 +197,7 @@ body {
 }
 
 .benefits-item {
-  align-items: flex-start;
+  display: flex;
   gap: 30px;
 }
 
@@ -207,6 +207,7 @@ body {
 
 .benefits-title {
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -216,6 +217,7 @@ body {
 
 .benefits-text {
   line-height: 1.71;
+  width: 270px;
 }
 
 /* Чим ми займаємося */
@@ -254,10 +256,16 @@ body {
   gap: 30px;
 }
 
-.team-cerd {
+.team-card {
+  background: var(--main-background);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.team-card-box {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-staff {
@@ -267,7 +275,6 @@ body {
 
   text-align: center;
   color: var(--title-color);
-  margin-top: 30px;
   margin-bottom: 10px;
 }
 
@@ -276,7 +283,6 @@ body {
   line-height: 1.19;
 
   text-align: center;
-  padding-bottom: 30px;
 }
 
 /* Футер */
@@ -342,7 +348,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-
+  padding: 6px 22px;
   text-align: center;
   letter-spacing: inherit;
   color: var(--title-color);
@@ -366,8 +372,9 @@ body {
   gap: 30px;
 }
 
-.filter-galery {
-  outline: 1px solid #eeeeee;
+.filter-item {
+  border: 1px solid #eeeeee;
+  padding: 20px 24px;
 }
 
 .filter-title {
@@ -377,16 +384,10 @@ body {
   letter-spacing: 0.06em;
 
   color: var(--title-color);
-  padding-left: 24px;
-  padding-right: 24px;
-  margin-top: 20px;
   margin-bottom: 4px;
 }
 
 .filter-text {
   font-size: 16px;
   line-height: 1.88;
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 20px;
 }
