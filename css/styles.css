@@ -311,7 +311,6 @@ body {
 .bottom-addres {
   display: inline-block;
   color: var(--addres-color);
-  margin-bottom: 9px;
 }
 
 .bottom-meta {
@@ -319,7 +318,7 @@ body {
   color: var(--footer-contakt-color);
 }
 
-.bottom-list {
+.bottom-list:not(:last-child) {
   margin-bottom: 9px;
 }
 
